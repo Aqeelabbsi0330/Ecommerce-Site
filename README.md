@@ -82,6 +82,7 @@ All tables use **foreign keys** to maintain relational integrity.
 - Payments are processed securely without storing card details.
 
 ## My routes
+//
 Route::post('/register', [UserController::class, 'register']);
 
 Route::post('/register', [UserController::class, 'register']);
@@ -94,6 +95,7 @@ Route::middleware('jwt')->group(function () {
     Route::get('/product/{id}', [ProductController::class, 'oneProduct']);
     //update product
     Route::put('/update-product/{id}', [ProductController::class, 'updateProduct']);
+    //
 
     //cart
     // add to cart
